@@ -3,11 +3,12 @@ import { Plus } from 'lucide-react'
 
 import Logo from '@/components/logo'
 import { Button } from '@/components/ui/button'
+import MobileSidebar from './mobile-sidebar';
 
 const Navbar = () => {
   return (
     <nav className='fixed z-50 top-0 w-full px-4 h-14 border-b shadow-sm bg-white flex items-center'>
-      {/* TODO: Mobile Sidebar */}
+      <MobileSidebar />
       <div className='flex items-center gap-x-4'>
         <div className='hidden md:flex'>
           <Logo />
